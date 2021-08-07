@@ -1,86 +1,101 @@
 var quizQuestions = [
   {
-      question: "What franchise would you rather play a game from?",
+      question: "Alçada?",
       answers: [
           {
-              type: "Microsoft",
-              content: "Halo"
+              type: "Nike",
+              content: "Menys d'1.60"
           },
           {
-              type: "Nintendo",
-              content: "Pokemon"
+              type: "Jordan",
+              content: "Entre 1.60 i 1.70"
           },
           {
-              type: "Sony",
-              content: "Uncharted"
+              type: "Adidas",
+              content: "Entre 1.70 i 1.80"
+          },
+          {
+              type: "Converse",
+              content: "Entre 1.80 i 1.90"
+          },
+          {
+              type: "Puma",
+              content: "Més d'1.90"
           }
       ]
   },
   {
-      question: "Which console would you prefer to play with friends?",
+      question: "Pes?",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box"
+              type: "Nike",
+              content: "Menys de 60kg"
           },
           {
-              type: "Nintendo",
-              content: "Nintendo 64"
+              type: "Jordan",
+              content: "Entre 60 i 70kg"
           },
           {
-              type: "Sony",
-              content: "Playstation 1"
-          }
+              type: "Adidas",
+              content: "Entre 70 i 80kg"
+          },
+          {
+              type: "Converse",
+              content: "Entre 80 i 90kg"
+          },
+          {
+              type: "Puma",
+              content: "Més de 90kg"
+          },
       ]
   },
   {
-      question: "Which of these racing franchises would you prefer to play a game from?",
+      question: "Posició?",
       answers: [
           {
-              type: "Microsoft",
-              content: "Forza"
+              type: "Nike",
+              content: "Base"
           },
           {
-              type: "Nintendo",
-              content: "Mario Kart"
+              type: "Jordan",
+              content: "Escorta"
           },
           {
-              type: "Sony",
-              content: "Gran Turismo"
-          }
+              type: "Adidas",
+              content: "Aler"
+          },
+          {
+              type: "Converse",
+              content: "Aler-pivot"
+          },
+          {
+              type: "Puma",
+              content: "Pivot"
+          },
       ]
   },
   {
-      question: "Which of these games do you think is best?",
+      question: "Tipus de jugador?",
       answers: [
           {
-              type: "Microsoft",
-              content: "BioShock"
+              type: "Nike",
+              content: "Explosiu"
           },
           {
-              type: "Nintendo",
-              content: "The Legend of Zelda: Ocarina of Time"
+              type: "Converse",
+              content: "Cerebral"
           },
           {
-              type: "Sony",
-              content: "Final Fantasy VII"
-          }
-      ]
-  },
-  {
-      question: "What console would you prefer to own?",
-      answers: [
-          {
-              type: "Microsoft",
-              content: "X-Box One"
+              type: "Adidas",
+              content: "Atlètic"
           },
           {
-              type: "Nintendo",
-              content: "Wii U"
+              type: "Jordan",
+              content: "Físic"
           },
           {
-              type: "Sony",
-              content: "Playstation 4"
+              type: "Puma",
+              content: "Totxo"
           }
       ]
   }
