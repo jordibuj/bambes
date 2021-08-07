@@ -82,7 +82,7 @@ var quizQuestions = [
               content: "Explosiu"
           },
           {
-              type: "Converse",
+              type: "Jordan",
               content: "Cerebral"
           },
           {
@@ -90,7 +90,7 @@ var quizQuestions = [
               content: "Atlètic"
           },
           {
-              type: "Jordan",
+              type: "Converse",
               content: "Físic"
           },
           {
