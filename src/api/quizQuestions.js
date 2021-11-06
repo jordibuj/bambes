@@ -1,4 +1,19 @@
-var quizQuestions = [
+export var positionQuestion = {
+  question: "Interior o exterior?",
+  answers: [
+    {
+      type: "Interior",
+      content: "Interior",
+    },
+    {
+      type: "Exterior",
+      content: "Exterior",
+    },
+  ]
+};
+
+export var interiorQuestions = [
+  positionQuestion,
   {
       question: "Alçada?",
       answers: [
@@ -48,7 +63,11 @@ var quizQuestions = [
               content: "Més de 90kg"
           },
       ]
-  },
+  }
+];
+
+export var exteriorQuestions = [
+  positionQuestion,
   {
       question: "Posició?",
       answers: [
@@ -100,5 +119,3 @@ var quizQuestions = [
       ]
   }
 ];
-
-export default quizQuestions;

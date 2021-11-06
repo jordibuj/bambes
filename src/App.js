@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import quizQuestions from './api/quizQuestions';
+import { positionQuestion, interiorQuestions, exteriorQuestions } from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result';
 import logo from './svg/logo.svg';
@@ -10,6 +10,8 @@ class App extends Component {
     super(props);
 
     this.state = {
+      position: null,
+      questions: [],
       counter: 0,
       questionId: 1,
       question: '',
@@ -23,23 +25,27 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const shuffledAnswerOptions = quizQuestions.map(question =>
-      this.shuffleArray(question.answers)
-    );
     this.setState({
-      question: quizQuestions[0].question,
-      answerOptions: shuffledAnswerOptions[0]
+      questions: [ positionQuestion ],
+      question: positionQuestion.question,
+      answerOptions: positionQuestion.answers
     });
   }
 
-  shuffleArray(array) {
-    return array;
-  }
-
   handleAnswerSelected(event) {
+    if (!this.state.position) {
+      this.setState({
+        position: event.currentTarget.value,
+        questions: event.currentTarget.value === "Interior" ? interiorQuestions : exteriorQuestions
+      });
+      this.setUserAnswer(event.currentTarget.value);
+      setTimeout(() => this.setNextQuestion(), 300);
+      return;
+    }
+
     this.setUserAnswer(event.currentTarget.value);
 
-    if (this.state.questionId < quizQuestions.length) {
+    if (this.state.questionId < this.state.questions.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
       setTimeout(() => this.setResults(this.getResults()), 300);
@@ -63,8 +69,8 @@ class App extends Component {
     this.setState({
       counter: counter,
       questionId: questionId,
-      question: quizQuestions[counter].question,
-      answerOptions: quizQuestions[counter].answers,
+      question: this.state.questions[counter].question,
+      answerOptions: this.state.questions[counter].answers,
       answer: ''
     });
   }
@@ -93,7 +99,7 @@ class App extends Component {
         answerOptions={this.state.answerOptions}
         questionId={this.state.questionId}
         question={this.state.question}
-        questionTotal={quizQuestions.length}
+        questionTotal={this.state.questions.length}
         onAnswerSelected={this.handleAnswerSelected}
       />
     );
