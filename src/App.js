@@ -33,17 +33,20 @@ class App extends Component {
   }
 
   handleAnswerSelected(event) {
+    const types = JSON.parse(event.currentTarget.value);
     if (!this.state.position) {
+      const position = types[0];
       this.setState({
-        position: event.currentTarget.value,
-        questions: event.currentTarget.value === "Interior" ? interiorQuestions : exteriorQuestions
+        position,
+        questions: position === "Interior" ? interiorQuestions : exteriorQuestions
       });
-      this.setUserAnswer(event.currentTarget.value);
+      this.setUserAnswer(position);
       setTimeout(() => this.setNextQuestion(), 300);
       return;
     }
-
-    this.setUserAnswer(event.currentTarget.value);
+    for (var type of types ) {
+      this.setUserAnswer(type);
+    }
 
     if (this.state.questionId < this.state.questions.length) {
       setTimeout(() => this.setNextQuestion(), 300);

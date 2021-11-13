@@ -2,11 +2,11 @@ export var positionQuestion = {
   question: "Interior o exterior?",
   answers: [
     {
-      type: "Interior",
+      type: ["Interior"],
       content: "Interior",
     },
     {
-      type: "Exterior",
+      type: ["Exterior"],
       content: "Exterior",
     },
   ]
@@ -18,23 +18,23 @@ export var interiorQuestions = [
       question: "Alçada?",
       answers: [
           {
-              type: "Nike",
+              type: ["Nike", "Jordan"],
               content: "Menys d'1.60"
           },
           {
-              type: "Jordan",
+              type: ["Jordan"],
               content: "Entre 1.60 i 1.70"
           },
           {
-              type: "Adidas",
+              type: ["Adidas"],
               content: "Entre 1.70 i 1.80"
           },
           {
-              type: "Converse",
+              type: ["Converse"],
               content: "Entre 1.80 i 1.90"
           },
           {
-              type: "Puma",
+              type: ["Puma"],
               content: "Més d'1.90"
           }
       ]
@@ -43,23 +43,23 @@ export var interiorQuestions = [
       question: "Pes?",
       answers: [
           {
-              type: "Nike",
+              type: ["Nike"],
               content: "Menys de 60kg"
           },
           {
-              type: "Jordan",
+              type: ["Jordan"],
               content: "Entre 60 i 70kg"
           },
           {
-              type: "Adidas",
+              type: ["Adidas"],
               content: "Entre 70 i 80kg"
           },
           {
-              type: "Converse",
+              type: ["Converse"],
               content: "Entre 80 i 90kg"
           },
           {
-              type: "Puma",
+              type: ["Puma"],
               content: "Més de 90kg"
           },
       ]
@@ -72,23 +72,23 @@ export var exteriorQuestions = [
       question: "Posició?",
       answers: [
           {
-              type: "Nike",
+              type: ["Nike"],
               content: "Base"
           },
           {
-              type: "Jordan",
+              type: ["Jordan"],
               content: "Escorta"
           },
           {
-              type: "Adidas",
+              type: ["Adidas"],
               content: "Aler"
           },
           {
-              type: "Converse",
+              type: ["Converse"],
               content: "Aler-pivot"
           },
           {
-              type: "Puma",
+              type: ["Puma"],
               content: "Pivot"
           },
       ]
@@ -97,23 +97,23 @@ export var exteriorQuestions = [
       question: "Tipus de jugador?",
       answers: [
           {
-              type: "Nike",
+              type: ["Nike"],
               content: "Explosiu"
           },
           {
-              type: "Jordan",
+              type: ["Jordan"],
               content: "Cerebral"
           },
           {
-              type: "Adidas",
+              type: ["Adidas"],
               content: "Atlètic"
           },
           {
-              type: "Converse",
+              type: ["Converse"],
               content: "Físic"
           },
           {
-              type: "Puma",
+              type: ["Puma"],
               content: "Totxo"
           }
       ]
