@@ -40,14 +40,14 @@ class App extends Component {
         position,
         questions: position === "Interior" ? interiorQuestions : exteriorQuestions
       });
-      this.setUserAnswer(position);
+      this.setUserAnswer(event.currentTarget.value);
       setTimeout(() => this.setNextQuestion(), 300);
       return;
     }
+    this.setUserAnswer(event.currentTarget.value);
     for (var type of types ) {
-      this.setUserAnswer(type);
+      this.incrementCount(type);
     }
-
     if (this.state.questionId < this.state.questions.length) {
       setTimeout(() => this.setNextQuestion(), 300);
     } else {
@@ -57,11 +57,16 @@ class App extends Component {
 
   setUserAnswer(answer) {
     this.setState((state, props) => ({
+      answer: answer
+    }));
+  }
+
+  incrementCount(answer) {
+    this.setState((state, props) => ({
       answersCount: {
         ...state.answersCount,
         [answer]: (state.answersCount[answer] || 0) + 1
-      },
-      answer: answer
+      }
     }));
   }
 
