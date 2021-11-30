@@ -1,7 +1,7 @@
 {
   "main.css": "/bambes/static/css/main.ead3e1ea.chunk.css",
-  "main.js": "/bambes/static/js/main.00784ede.chunk.js",
-  "main.js.map": "/bambes/static/js/main.00784ede.chunk.js.map",
+  "main.js": "/bambes/static/js/main.599b1599.chunk.js",
+  "main.js.map": "/bambes/static/js/main.599b1599.chunk.js.map",
   "static/js/1.5a80405e.chunk.js": "/bambes/static/js/1.5a80405e.chunk.js",
   "static/js/1.5a80405e.chunk.js.map": "/bambes/static/js/1.5a80405e.chunk.js.map",
   "runtime~main.js": "/bambes/static/js/runtime~main.f065bf21.js",
@@ -10,6 +10,6 @@
   "static/media/index.css": "/bambes/static/media/icon-check.4cffa739.svg",
   "static/css/main.ead3e1ea.chunk.css.map": "/bambes/static/css/main.ead3e1ea.chunk.css.map",
   "index.html": "/bambes/index.html",
-  "precache-manifest.b950915b4af1082fb66896de9d81615b.js": "/bambes/precache-manifest.b950915b4af1082fb66896de9d81615b.js",
+  "precache-manifest.c69650f7c1e52da682416dc6da984249.js": "/bambes/precache-manifest.c69650f7c1e52da682416dc6da984249.js",
   "service-worker.js": "/bambes/service-worker.js"
 }

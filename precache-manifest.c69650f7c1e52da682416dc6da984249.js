@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "00784ede36d5d9e102f6",
+    "revision": "599b15991961727ba2b9",
     "url": "/bambes/static/css/main.ead3e1ea.chunk.css"
   },
   {
-    "revision": "00784ede36d5d9e102f6",
-    "url": "/bambes/static/js/main.00784ede.chunk.js"
+    "revision": "599b15991961727ba2b9",
+    "url": "/bambes/static/js/main.599b1599.chunk.js"
   },
   {
     "revision": "5a80405e8fff7c81f25f",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/bambes/static/media/icon-check.4cffa739.svg"
   },
   {
-    "revision": "758e67590f3e1548b581949bc5e6aa6a",
+    "revision": "9fb18489ebd00ba1c42ce479e92f150c",
     "url": "/bambes/index.html"
   }
 ];
