@@ -96,7 +96,7 @@ class App extends Component {
     if (result.length === 1) {
       this.setState({ result: result[0] });
     } else {
-      this.setState({ result: 'Crocs' });
+      this.setState({ result: result.join(', ') });
     }
   }
 
