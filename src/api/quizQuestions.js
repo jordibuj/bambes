@@ -19,7 +19,7 @@ export var interiorQuestions = [
         content: "Sóc clarament més alt que la mitja"
       },
       {
-        type: ["Zoom Rize 2"],
+        type: ["Zoom Rize 2","KD 13"],
         content: "Sóc lleugerament més alt que la mitja"
       },
       {
@@ -99,7 +99,7 @@ export var interiorQuestions = [
         content: "Sóc tant explosiu com la majoria dels jugadors"
       },
       {
-        type: ["Zoom Rize 2"],
+        type: ["Zoom Rize 2","Kobe 5 Protro" ],
         content: "Sóc un jugador poc explosiu"
       },
       {
@@ -207,6 +207,7 @@ export var interiorQuestions = [
         type: ["Kobe 5 Protro"],
         content: "S'emportarà la pilota el contrari"
 
+
       }
     ]
   }
@@ -228,7 +229,7 @@ export var exteriorQuestions = [
         content: "Sóc com la mitja"
       },
       {
-        type: ["Zoom Freak 2"],
+        type: ["Zoom Freak 2","Curry 8"],
         content: "Sóc lleugerament més baix que la mitja"
       },
       {
@@ -276,7 +277,7 @@ export var exteriorQuestions = [
         content: "Sóc un jugador equilibrat"
       },
       {
-        type: ["Curry 8"],
+        type: ["Curry 8","KD 13"],
         content: "Sóc un jugador de complexió més aviat prima"
       },
       {
@@ -300,7 +301,7 @@ export var exteriorQuestions = [
         content: "Sóc tant explosiu com la majoria dels jugadors"
       },
       {
-        type: ["Zoom Freak 2"],
+        type: ["Zoom Freak 2","Kobe 5 Protro","KD 13"],
         content: "Sóc un jugador poc explosiu"
       },
       {
@@ -348,7 +349,7 @@ export var exteriorQuestions = [
         content: "Sóc un jugador tant fort com la majoria"
       },
       {
-        type: ["Zoom Freak 2"],
+        type: ["Zoom Freak 2","Curry 8"],
         content: "Sóc un jugador més aviat fluix"
       },
       {
@@ -360,6 +361,7 @@ export var exteriorQuestions = [
   {
     question: "Valora el teu salt vertical (respecte els interiors)",
     answers: [
+
 
       {
         type: ["Air Jordan 35"],
@@ -387,10 +389,12 @@ export var exteriorQuestions = [
     question: "Valora la teva capacitat d'endur-te una pilota dividida/rebot/lluita (respecte els interiors)",
     answers: [
 
+
       {
         type: ["Air Jordan 35"],
         content: "Sens dubte m'emporto jo la pilota"
       },
+
 
       {
         type: ["Curry 8"],
@@ -407,6 +411,7 @@ export var exteriorQuestions = [
       {
         type: ["Kobe 5 Protro", "Zoom Freak 2"],
         content: "S'emportarà la pilota el contrari"
+
 
       }
     ]
